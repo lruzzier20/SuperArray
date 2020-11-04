@@ -4,6 +4,10 @@ public class SuperArray{
 
   public SuperArray(){
     data = new String[10];
-    size = 10;
+    size = 0;
+  }
+
+  public int size(){
+    return size;
   }
 }
