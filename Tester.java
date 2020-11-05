@@ -16,5 +16,19 @@ public class Tester{
     for(int i=0;i<a.size();i++){
       System.out.println(a.get(i));
     }
+    System.out.println(a.isEmpty());
+    System.out.println(a);
+    a.clear();
+    System.out.println(a.isEmpty());
+    System.out.println(a.add("Ciao"));
+    System.out.println(a.contains("Ciao"));
+    System.out.println(a.contains("Nihao"));
+    System.out.println(a);
+    a.add("0");
+    a.add("1");
+    a.add("2");
+    System.out.println(a);
+    a.add(4, "Hola");
+    System.out.println(a);
   }
 }
