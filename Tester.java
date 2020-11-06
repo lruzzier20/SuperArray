@@ -30,7 +30,9 @@ public class Tester{
     System.out.println(a);
     a.add(4, "Hola");
     System.out.println(a);
-    System.out.println(a.remove(4));
+    System.out.println(a.remove(3));
     System.out.println(a);
+    System.out.println(a.indexOf("Hola"));
+    System.out.println(a.indexOf("Zdravstvuyte"));
   }
 }
