@@ -80,12 +80,12 @@ public class SuperArray{
   }
 
   public String toString(){
-    String sentence = "{";
+    String sentence = "[";
     for(int i=0;i<size;i++){
       sentence = sentence + (data[i]);
       if(i!=size-1){sentence = sentence + ", ";}
     }
-    sentence = sentence + "}";
+    sentence = sentence + "]";
     return sentence;
   }
 
