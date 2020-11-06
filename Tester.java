@@ -24,11 +24,13 @@ public class Tester{
     System.out.println(a.contains("Ciao"));
     System.out.println(a.contains("Nihao"));
     System.out.println(a);
-    a.add("0");
-    a.add("1");
-    a.add("2");
+    a.add("pos1");
+    a.add("pos2");
+    a.add("pos3");
     System.out.println(a);
     a.add(4, "Hola");
+    System.out.println(a);
+    System.out.println(a.remove(4));
     System.out.println(a);
   }
 }

@@ -36,6 +36,22 @@ public class SuperArray{
     data = c;
   }
 
+  public String remove(int index){
+    String temp = data[index];
+    String[] d = new String[data.length];
+    add(null);
+    if(index!=0){d[0]=data[0];}
+    boolean gone = false;
+    for(int i=1;i+1<size;i++){
+      if(gone){d[i]=data[i+1];}
+      if(i-1==index){d[i-1]=data[i]; d[i]=data[i+1]; gone=true;}
+      if(!gone){d[i]=data[i];}
+    }
+    size-=2;
+    data = d;
+    return temp;
+  }
+
   public String get(int index){
     return data[index];
   }
@@ -47,7 +63,7 @@ public class SuperArray{
   }
 
   private void resize(){
-    String[] b = new String[data.length + 10];
+    String[] b = new String[2*(1 + data.length)];
     for(int i=0;i<size;i++){
       b[i] = data[i];
     }
