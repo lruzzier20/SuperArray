@@ -34,5 +34,8 @@ public class Tester{
     System.out.println(a);
     System.out.println(a.indexOf("Hola"));
     System.out.println(a.indexOf("Zdravstvuyte"));
+    System.out.println(a);
+    a.toArray();
+    System.out.println(a);
   }
 }
