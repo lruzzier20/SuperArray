@@ -120,4 +120,15 @@ public class SuperArray{
     }
     return ans;
   }
+
+  public boolean equals(SuperArray other){
+    boolean ans = true;
+    if(size==0&&other.size()==0){return true;}
+    if(size==0){return false;}
+    if(other.size()==0){return false;}
+    for(int i=0;i<size;i++){
+      if(data[i]!=other.get(i)){ans=false;}
+    }
+    return ans;
+  }
 }

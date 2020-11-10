@@ -42,5 +42,12 @@ public class Tester{
     System.out.println(a);
     System.out.println(a.lastIndexOf("Hola"));
     System.out.println(a.lastIndexOf("Konichiwa"));
+    SuperArray b = new SuperArray();
+    SuperArray c = new SuperArray();
+    System.out.println(b.equals(c));
+    b.add("tired");
+    System.out.println(b.equals(c));
+    c.add("tired");
+    System.out.println(b.equals(c));
   }
 }
