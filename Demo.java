@@ -15,6 +15,15 @@ public class Demo{
    second.add("ebi");
    System.out.println(second);
    System.out.println(findOverlap(words, second));
+   System.out.println("\n");
+   words.add("lol");
+   words.add("I");
+   words.add("ruined");
+   words.add("your");
+   words.add("theme");
+   System.out.println(words);
+   System.out.println(second);
+   System.out.println(zip(words, second));
  }
 
   public static void removeDuplicates(SuperArray s){
@@ -31,6 +40,29 @@ public class Demo{
       if(b.contains(a.get(i))){c.add(a.get(i));}
     }
     removeDuplicates(c);
+    return c;
+  }
+
+  public static SuperArray zip(SuperArray a, SuperArray b){
+    int smaller = 0;
+    int temp = 0;
+    SuperArray c = new SuperArray(a.size() + b.size());
+    if(a.size()<b.size()){smaller=a.size();}else{smaller=b.size();}
+    for(int i=0;i<smaller;i++){
+      c.add(a.get(i));
+      c.add(b.get(i));
+      temp++;
+    }
+    if(a.size()>b.size()){
+      for(int j=temp;j<a.size();j++){
+        c.add(a.get(j));
+      }
+    }
+    if(b.size()>a.size()){
+      for(int k=temp;k<b.size();k++){
+        c.add(b.get(k));
+      }
+    }
     return c;
   }
 }
