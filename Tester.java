@@ -49,5 +49,12 @@ public class Tester{
     System.out.println(b.equals(c));
     c.add("tired");
     System.out.println(b.equals(c));
+    System.out.println("\n");
+    System.out.println(a);
+    System.out.println(b);
+    a.remove(0);
+    System.out.println(a);
+    System.out.println(a.equals(b));
+    System.out.println(b.equals(a));
   }
 }
