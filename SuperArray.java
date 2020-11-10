@@ -54,6 +54,7 @@ public class SuperArray{
   }
 
   public String get(int index){
+    if(index<0||index>=size()){throw new IndexOutOfBoundsException("Invalid index");}
     return data[index];
   }
 
