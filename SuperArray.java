@@ -112,4 +112,12 @@ public class SuperArray{
     return e;
   }
 
+  public int lastIndexOf(String value){
+    if(!contains(value)){return -1;}
+    int ans = 0;
+    for(int i=0;i<size;i++){
+      if(data[i]==value){ans=i;}
+    }
+    return ans;
+  }
 }

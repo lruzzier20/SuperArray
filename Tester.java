@@ -37,5 +37,10 @@ public class Tester{
     System.out.println(a);
     a.toArray();
     System.out.println(a);
+    System.out.println(a.lastIndexOf("Hola"));
+    a.add("Hola");
+    System.out.println(a);
+    System.out.println(a.lastIndexOf("Hola"));
+    System.out.println(a.lastIndexOf("Konichiwa"));
   }
 }
