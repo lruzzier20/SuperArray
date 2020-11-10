@@ -56,5 +56,6 @@ public class Tester{
     System.out.println(a);
     System.out.println(a.equals(b));
     System.out.println(b.equals(a));
+    SuperArray E = new SuperArray(-1);
   }
 }
