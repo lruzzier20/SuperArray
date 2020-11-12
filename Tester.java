@@ -58,6 +58,6 @@ public class Tester{
     System.out.println(b.equals(a));
     try{SuperArray E = new SuperArray(-1);}catch(IllegalArgumentException e){System.out.println("Caught an IllegalArgumentException");}
     try{a.get(-1);}catch(IndexOutOfBoundsException e){System.out.println("Caught an IndexOutOfBoundsException");}
-
+    try{a.set(-1, "lulwut");}catch(IndexOutOfBoundsException e){System.out.println("Caught an IndexOutOfBoundsException");}
   }
 }

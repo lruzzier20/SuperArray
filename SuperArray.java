@@ -59,6 +59,7 @@ public class SuperArray{
   }
 
   public String set(int index, String element){
+    if(index<0||index>=size()){throw new IndexOutOfBoundsException("Invalid index");}
     String temp = data[index];
     data[index] = element;
     return temp;
