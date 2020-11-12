@@ -25,6 +25,7 @@ public class SuperArray{
   }
 
   public void add(int index, String element){
+    if(index<0||index>size()){throw new IndexOutOfBoundsException("Invalid index");}
     String[] c = new String[data.length + 1];
     boolean beenHere=true;
     size++;
