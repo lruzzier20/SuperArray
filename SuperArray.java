@@ -39,6 +39,7 @@ public class SuperArray{
   }
 
   public String remove(int index){
+    if(index<0||index>=size()){throw new IndexOutOfBoundsException("Invalid index");}
     String temp = data[index];
     String[] d = new String[data.length];
     add(null);

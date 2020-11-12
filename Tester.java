@@ -63,5 +63,7 @@ public class Tester{
     try{a.set(100, "lulwut");}catch(IndexOutOfBoundsException e){System.out.println("Caught an IndexOutOfBoundsException");}
     try{a.add(-1, "lulwut");}catch(IndexOutOfBoundsException e){System.out.println("Caught an IndexOutOfBoundsException");}
     try{a.add(100, "lulwut");}catch(IndexOutOfBoundsException e){System.out.println("Caught an IndexOutOfBoundsException");}
+    try{a.remove(-1);}catch(IndexOutOfBoundsException e){System.out.println("Caught an IndexOutOfBoundsException");}
+    try{a.remove(100);}catch(IndexOutOfBoundsException e){System.out.println("Caught an IndexOutOfBoundsException");}
   }
 }
